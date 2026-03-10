@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd D:/VAR && npm install 2>&1)"
+    ]
+  }
+}

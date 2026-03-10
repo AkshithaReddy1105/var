@@ -1,0 +1,23 @@
+# Nuxt
+.nuxt/
+.output/
+.nitro/
+.cache/
+
+# Dependencies
+node_modules/
+
+# Build
+dist/
+
+# Env (NEVER commit these — they contain secrets)
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
