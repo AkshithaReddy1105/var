@@ -30,7 +30,7 @@ onMounted(() => {
 
           <!-- Firm name -->
           <h1 class="text-white font-bold text-xl mb-1 tracking-tight">
-            Ahaladar Rao &amp; Associates
+            AHALADA RAO.V &amp; ASSOCIATES
           </h1>
           <p class="text-blue-200 text-sm mb-8 font-medium">
             Company Secretaries · Hyderabad

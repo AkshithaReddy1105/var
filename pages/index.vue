@@ -14,7 +14,7 @@ useHead({
     innerHTML: JSON.stringify({
       '@context': 'https://schema.org',
       '@type': ['ProfessionalService', 'LocalBusiness'],
-      name: 'Ahaladar Rao & Associates',
+      name: 'Ahalada Rao.V & Associates',
       description: 'ICSI-qualified Company Secretary firm offering corporate compliance, secretarial audit, NCLT, FEMA and advisory services in Hyderabad.',
       url: 'https://ahaladaroassociates.com',
       telephone: '+914027623101',
@@ -27,7 +27,7 @@ useHead({
         postalCode: '500020',
         addressCountry: 'IN',
       },
-      openingHours: 'Mo-Fr 09:30-18:00',
+      openingHours: 'Mo-Sa 10:00-19:30',
       priceRange: '$$',
     }),
   }],
@@ -73,7 +73,7 @@ const featuredServices = [
 ]
 
 const stats = [
-  { value: '18+',  label: 'Years of Experience' },
+  { value: '25+',  label: 'Years of Experience' },
   { value: '500+', label: 'Clients Served' },
   { value: '20+',  label: 'Service Areas' },
   { value: '100%', label: 'Compliance Focus' },
@@ -106,27 +106,6 @@ const whyUs = [
   },
 ]
 
-// ─── PLACEHOLDER TESTIMONIALS ────────────────────────────────────────────────
-// Replace these with real client testimonials once available.
-// To update: change name, company and text fields below.
-// ─────────────────────────────────────────────────────────────────────────────
-const testimonials = [
-  {
-    name:    'Client Name',                          // ← replace
-    company: 'Designation, Company Name',            // ← replace
-    text:    'Placeholder testimonial — replace with actual client feedback. Ahaladar Rao & Associates has been our trusted compliance partner. Their expertise has given us complete peace of mind.',
-  },
-  {
-    name:    'Client Name',                          // ← replace
-    company: 'Designation, Company Name',            // ← replace
-    text:    'Placeholder testimonial — replace with actual client feedback. Exceptional service quality, always on time, and deep expertise in regulatory matters.',
-  },
-  {
-    name:    'Client Name',                          // ← replace
-    company: 'Designation, Company Name',            // ← replace
-    text:    'Placeholder testimonial — replace with actual client feedback. Highly professional team that guided us through incorporation and annual compliance flawlessly.',
-  },
-]
 </script>
 
 <template>
@@ -380,53 +359,4 @@ const testimonials = [
     </div>
   </section>
 
-  <!-- ════════════════════════════════════════════════════════
-       TESTIMONIALS
-  ════════════════════════════════════════════════════════ -->
-  <section class="section-pad bg-gray-50">
-    <div class="container-lg">
-      <div class="text-center mb-10">
-        <span class="text-sm font-bold uppercase tracking-widest text-blue-600">Client Voices</span>
-        <h2 class="section-heading mt-2">What Our Clients Say</h2>
-        <span class="section-divider mx-auto" />
-      </div>
-
-      <!-- ✏️ PLACEHOLDER NOTICE — remove this block once real testimonials are added -->
-      <div class="mb-10 max-w-2xl mx-auto bg-amber-50 border border-amber-200 rounded-xl px-5 py-3 flex items-center gap-3 text-sm text-amber-800">
-        <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-          <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
-        </svg>
-        <p><strong>Sample content:</strong> These are placeholder testimonials. Replace them in <code class="bg-amber-100 px-1 rounded">pages/index.vue</code> with real client reviews.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div
-          v-for="t in testimonials"
-          :key="t.name"
-          class="card p-8 border border-gray-100"
-        >
-          <!-- Stars -->
-          <div class="flex gap-1 mb-5">
-            <svg v-for="n in 5" :key="n" class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-            </svg>
-          </div>
-
-          <blockquote class="text-gray-600 text-sm leading-relaxed mb-6 italic">
-            "{{ t.text }}"
-          </blockquote>
-
-          <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
-            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-700 text-sm">
-              {{ t.name[0] }}
-            </div>
-            <div>
-              <div class="font-semibold text-brand-navy text-sm">{{ t.name }}</div>
-              <div class="text-xs text-gray-400">{{ t.company }}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 </template>

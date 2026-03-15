@@ -35,7 +35,7 @@ const year = new Date().getFullYear()
           <div class="flex items-center gap-3 mb-5">
             <div class="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center text-white font-bold text-xl font-serif" title="Logo placeholder">A</div>
             <div>
-              <div class="font-bold text-sm leading-tight">Ahaladar Rao &amp; Associates</div>
+              <div class="font-bold text-sm leading-tight">AHALADA RAO.V &amp; ASSOCIATES</div>
               <div class="text-xs text-blue-200 font-medium">Company Secretaries</div>
             </div>
           </div>
@@ -123,7 +123,7 @@ const year = new Date().getFullYear()
     <!-- ── Bottom bar ── -->
     <div class="border-t border-white/10">
       <div class="container-lg py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-blue-200">
-        <p>© {{ year }} Ahaladar Rao &amp; Associates. All rights reserved.</p>
+        <p>© {{ year }} Ahalada Rao.V &amp; Associates. All rights reserved.</p>
         <p class="text-xs">
           Designed &amp; developed for professional excellence &nbsp;|&nbsp;
           <a href="mailto:mail@ahaladaroassociates.com" class="hover:text-white transition-colors">Contact</a>

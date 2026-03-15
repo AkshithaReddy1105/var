@@ -49,7 +49,7 @@ watch(() => route.path, () => { isOpen.value = false })
                 'font-bold text-base leading-tight transition-colors',
                 solidHeader ? 'text-brand-navy' : 'text-white',
               ]"
-            >Ahaladar Rao &amp; Associates</div>
+            >AHALADA RAO.V &amp; ASSOCIATES</div>
             <div
               :class="[
                 'text-xs font-medium transition-colors',

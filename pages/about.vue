@@ -25,14 +25,6 @@ const values = [
   },
 ]
 
-const milestones = [
-  { year: '2006', event: 'Firm established in Hyderabad with a focus on corporate compliance services.' },
-  { year: '2010', event: 'Expanded service portfolio to include FEMA, RBI, and cross-border compliance.' },
-  { year: '2014', event: 'Commenced NCLT practice and insolvency advisory services.' },
-  { year: '2018', event: 'Reached 300+ active client milestone across Telangana and Andhra Pradesh.' },
-  { year: '2022', event: 'Launched digital-first compliance management for corporates.' },
-  { year: '2024', event: 'Serving 500+ clients pan-India with a growing team of qualified professionals.' },
-]
 
 const expertise = [
   'Companies Act, 2013 & Rules',
@@ -59,11 +51,11 @@ const expertise = [
       <div class="grid lg:grid-cols-2 gap-16 items-center">
         <div>
           <span class="text-sm font-bold uppercase tracking-widest text-blue-600">Who We Are</span>
-          <h2 class="section-heading mt-2">Ahaladar Rao &amp; Associates</h2>
+          <h2 class="section-heading mt-2">Ahalada Rao.V &amp; Associates</h2>
           <span class="section-divider" />
           <div class="space-y-4 text-gray-600 leading-relaxed">
             <p>
-              <strong class="text-brand-navy">Ahaladar Rao &amp; Associates</strong> is a practising Company Secretary firm based in Hyderabad, Telangana, established with the mission to provide reliable, high-quality corporate compliance and legal advisory services to businesses of all sizes.
+              <strong class="text-brand-navy">Ahalada Rao.V &amp; Associates</strong> is a practising Company Secretary firm based in Hyderabad, Telangana, established with the mission to provide reliable, high-quality corporate compliance and legal advisory services to businesses of all sizes.
             </p>
             <p>
               Founded by qualified Company Secretaries registered with the <strong class="text-brand-navy">Institute of Company Secretaries of India (ICSI)</strong>, our firm has built a reputation for accuracy, timeliness, and integrity across all our engagements.
@@ -97,7 +89,7 @@ const expertise = [
               </div>
             </div>
             <div class="grid grid-cols-2 gap-4">
-              <div v-for="stat in [['18+','Years Experience'],['500+','Clients Served'],['20+','Service Areas'],['100%','Compliance Rate']]" :key="stat[0]" class="bg-white/10 rounded-xl p-4 text-center">
+              <div v-for="stat in [['25+','Years Experience'],['500+','Clients Served'],['20+','Service Areas'],['100%','Compliance Rate']]" :key="stat[0]" class="bg-white/10 rounded-xl p-4 text-center">
                 <div class="text-2xl font-bold text-amber-400">{{ stat[0] }}</div>
                 <div class="text-xs text-blue-200 mt-1">{{ stat[1] }}</div>
               </div>
@@ -239,36 +231,6 @@ const expertise = [
     </div>
   </section>
 
-  <!-- ── Journey / Timeline ── -->
-  <section class="section-pad bg-gray-50">
-    <div class="container-lg">
-      <div class="text-center mb-16">
-        <span class="text-sm font-bold uppercase tracking-widest text-blue-600">Our Journey</span>
-        <h2 class="section-heading mt-2">Milestones Over the Years</h2>
-        <span class="section-divider mx-auto" />
-      </div>
-      <div class="max-w-3xl mx-auto">
-        <div class="relative">
-          <!-- Vertical line -->
-          <div class="absolute left-6 top-0 bottom-0 w-0.5 bg-blue-100" />
-
-          <div
-            v-for="(m, i) in milestones"
-            :key="m.year"
-            class="flex gap-6 mb-8 relative"
-          >
-            <div class="w-12 h-12 rounded-full bg-blue-700 flex items-center justify-center flex-shrink-0 z-10 shadow-md">
-              <span class="text-white text-xs font-bold">{{ m.year.slice(2) }}</span>
-            </div>
-            <div class="bg-white rounded-xl p-5 shadow-brand flex-1 border border-gray-100">
-              <div class="font-bold text-brand-navy text-sm mb-1">{{ m.year }}</div>
-              <p class="text-gray-600 text-sm leading-relaxed">{{ m.event }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- ── CTA ── -->
   <section class="py-20 bg-blue-700">

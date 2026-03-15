@@ -8,11 +8,12 @@ useSeoMeta({
 // Team data — update names, designations and bio once provided
 const team = [
   {
-    name:        'CS Ahaladar Rao',
-    designation: 'Founder & Principal Company Secretary',
-    qual:        'FCS, LL.B.',
+    name:        'CS Dr Ahalada Rao Vummenthala',
+    designation: 'Practising Company Secretary',
+    title:       'Founder Partner',
+    qual:        'B.Sc, LLM, MFM, FCS, Ph.D',
     expertise:   ['Corporate Governance', 'NCLT & IBC', 'FEMA / RBI', 'M&A & Restructuring'],
-    bio:         `With over 18 years of practising experience, the Founder leads the firm's corporate advisory and NCLT practice. Specialises in complex restructuring, insolvency proceedings, and regulatory compliance.`,
+    bio:         `With over 25 years of practising experience, the Founder leads the firm's corporate advisory and NCLT practice. Specialises in complex restructuring, insolvency proceedings, and regulatory compliance.`,
   },
   // Additional team members will be added here
 ]
@@ -51,7 +52,7 @@ const departments = [
             <!-- Photo placeholder
                  PLACEHOLDER: Replace with actual headshot.
                  Add photo to public/images/team/founder.jpg and replace with:
-                   <img src="/images/team/founder.jpg" alt="CS Ahaladar Rao" class="w-full h-full object-cover" />
+                   <img src="/images/team/founder.jpg" alt="CS Dr Ahalada Rao Vummenthala" class="w-full h-full object-cover" />
             -->
             <div class="md:col-span-2 gradient-brand min-h-64 flex items-center justify-center relative">
               <div class="text-center">
@@ -79,8 +80,9 @@ const departments = [
               </div>
 
               <h2 class="font-serif text-2xl font-bold text-brand-navy mb-1">{{ team[0].name }}</h2>
-              <p class="text-blue-700 font-semibold text-sm mb-1">{{ team[0].designation }}</p>
-              <p class="text-gray-400 text-xs mb-4">{{ team[0].qual }}</p>
+              <p class="text-gray-400 text-xs mb-2">{{ team[0].qual }}</p>
+              <p class="text-blue-700 font-semibold text-sm mb-0.5">{{ team[0].designation }}</p>
+              <p class="text-blue-700 font-semibold text-sm mb-4">{{ team[0].title }}</p>
 
               <p class="text-gray-600 text-sm leading-relaxed mb-5">{{ team[0].bio }}</p>
 

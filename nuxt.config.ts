@@ -22,7 +22,7 @@ export default defineNuxtConfig({
       ],
       meta: [
         { name: 'theme-color', content: '#0d2137' },
-        { property: 'og:site_name', content: 'Ahaladar Rao & Associates' },
+        { property: 'og:site_name', content: 'Ahalada Rao.V & Associates - Company Secretaries' },
         { property: 'og:type', content: 'website' },
       ],
     },

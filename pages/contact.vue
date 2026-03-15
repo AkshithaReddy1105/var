@@ -60,7 +60,7 @@ const contactInfo = [
   {
     icon: 'clock',
     label: 'Office Hours',
-    lines: ['Monday – Friday: 9:30 AM – 6:00 PM', 'Saturday: 10:00 AM – 2:00 PM', 'Sunday: Closed'],
+    lines: ['Monday – Saturday: 10:00 AM – 7:30 PM IST', 'Sunday: Closed'],
   },
 ]
 </script>
