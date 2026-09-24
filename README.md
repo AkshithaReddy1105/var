@@ -26,6 +26,24 @@ Edit page content directly in its HTML file and styles in `assets/css/main.css`.
 
 Upload the six HTML files, `assets/css/main.css`, `robots.txt`, and `sitemap.xml` to any static web host. No build command is needed. Do not upload local development folders or `.env` files.
 
-GitHub Pages publishes this site at **https://akshithareddy1105.github.io/var/** from the root of the `main` branch. Push changes to `main` to publish updates. `.nojekyll` serves the files without Jekyll processing.
+GitHub Pages publishes this site from the root of the `main` branch. The custom domain is **https://ahaladaraoassociates.com/**, configured in `CNAME`. Push changes to `main` to publish updates. `.nojekyll` serves the files without Jekyll processing.
 
-The sitemap uses the GitHub Pages URL; update it and `robots.txt` if the domain changes. On a GitHub project site, crawler rules are read from the account domain's root `/robots.txt`, not this project's `/var/robots.txt`; the sitemap itself remains available at `/var/sitemap.xml`. Secondary pages use `.html` URLs.
+The sitemap and `robots.txt` use the custom domain. Update these files and `CNAME` if the domain changes. Secondary pages use `.html` URLs.
+
+## Cloudflare DNS setup
+
+The domain must use its assigned Cloudflare nameservers. In Cloudflare DNS, configure the following records with TTL Auto and proxy status **DNS only** while GitHub validates the domain and provisions HTTPS:
+
+| Type | Name | Target |
+| --- | --- | --- |
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | akshithareddy1105.github.io |
+
+Replace conflicting website A, AAAA, or CNAME records for `@` and `www`; preserve records used by other services, including MX and TXT records. The CNAME target must not include `/var/`.
+
+Once GitHub Pages reports a valid DNS check and its HTTPS certificate is ready, enable **Enforce HTTPS** in the repository's Settings → Pages. GitHub redirects `www` to the apex domain when both are configured. The domain will not serve the site until the DNS setup is complete.
+
+Reference: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
