@@ -1,16 +1,4 @@
-# Nuxt
-.nuxt/
-.output/
-.nitro/
-.cache/
-
-# Dependencies
-node_modules/
-
-# Build
-dist/
-
-# Env (NEVER commit these — they contain secrets)
+# Local secrets
 .env
 .env.local
 .env.*.local
