@@ -26,4 +26,6 @@ Edit page content directly in its HTML file and styles in `assets/css/main.css`.
 
 Upload the six HTML files, `assets/css/main.css`, `robots.txt`, and `sitemap.xml` to any static web host. No build command is needed. Do not upload local development folders or `.env` files.
 
-The sitemap uses the existing `https://ahaladaroassociates.com` domain; update it and `robots.txt` if the domain changes. Secondary pages now use `.html` URLs. If replacing a live Nuxt deployment, configure permanent redirects at the host from `/about`, `/services`, `/team`, `/contact`, and `/appointments` to the corresponding `.html` files.
+GitHub Pages publishes this site at **https://akshithareddy1105.github.io/var/** from the root of the `main` branch. Push changes to `main` to publish updates. `.nojekyll` serves the files without Jekyll processing.
+
+The sitemap uses the GitHub Pages URL; update it and `robots.txt` if the domain changes. On a GitHub project site, crawler rules are read from the account domain's root `/robots.txt`, not this project's `/var/robots.txt`; the sitemap itself remains available at `/var/sitemap.xml`. Secondary pages use `.html` URLs.

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ahaladaroassociates.com/sitemap.xml
+Sitemap: https://akshithareddy1105.github.io/var/sitemap.xml
